@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Verfügbare Räume</h1>
+  <div [ngClass]="getNgStyle(room)" *ngFor="let room of rooms">
+    <img  src="{{room.img_url}}" alt="room" width="300px">
+    <p>{{room.description}}</p>
+    <i class="fa fa-refresh" aria-hidden="true"></i>
+  </div>
+</div>

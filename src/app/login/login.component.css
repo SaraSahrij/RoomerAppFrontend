@@ -1,12 +1,10 @@
 .container {
-  background-image: url("../../assets/fh.jpeg");
+  background-image: url("../../assets/img/fh.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   display: flex;
   align-items: center;
-
-
 }
 
 

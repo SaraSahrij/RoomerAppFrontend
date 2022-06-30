@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 77%;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.room {
+  width: 80%;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.3rem;
+  align-items: center;
+}
+
+img {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.empty {
+
+  background-color: rgba(144, 238, 144, 0.34);
+}
+
+.full {
+  background-color: rgba(240, 128, 128, 0.34);
+}
+
+.mid {
+  background-color: rgb(241, 90, 21, 0.34);
+}
+
+
+.room p {
+  margin-left: 1rem;
+}
+
+.room i {
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+.room i:hover {
+  cursor: pointer;
+}
+

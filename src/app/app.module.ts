@@ -11,6 +11,7 @@ import{MatButtonModule} from "@angular/material/button";
 import{MatCardModule} from '@angular/material/card';
 import { CoronaStatusComponent } from './corona-status/corona-status.component';
 import { HeaderComponent } from './header/header.component';
+import { RoomListComponent } from './room-list/room-list.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     LoginComponent,
     CoronaStatusComponent,
-    HeaderComponent
+    HeaderComponent,
+    RoomListComponent
   ],
   imports: [
     BrowserModule,
