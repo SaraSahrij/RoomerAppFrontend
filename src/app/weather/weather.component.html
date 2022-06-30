@@ -1,9 +1,3 @@
-<div class="search">
-    <form #form="ngForm" (submit)="onSubmit()">
-        <input type="text" placeholder="Search City" name="city" [(ngModel)]="cityName">
-    </form>
-</div>
-
 <div class="container" *ngIf="weatherData">
     <div class="upper-data">
         <img src="../assets/img/hot.jpeg " alt="Hot" *ngIf="weatherData.main.temp > 15">
@@ -16,7 +10,7 @@
     </div>
     <div class="lower-data">
         <div class="more-info-label">
-            More Information
+            Mehr Informationen
         </div>
         <div class="more-info-container">
             <div class="info-block">

@@ -20,7 +20,7 @@ export class WeatherComponent implements OnInit {
 
   onSubmit() {
     this.getWeatherData(this.cityName);
-    this.cityName = '';
+    this.cityName = 'Dortmund';
   }
 
   private getWeatherData(cityName: string) {

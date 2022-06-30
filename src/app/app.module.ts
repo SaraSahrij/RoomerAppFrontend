@@ -32,7 +32,9 @@ import { WeatherComponent } from './weather/weather.component';
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
-      { path: '', component: LoginComponent }
+      { path: 'rooms', component: RoomListComponent },
+      { path: 'corona', component: CoronaStatusComponent },
+      { path: 'weather', component: WeatherComponent },
     ]),
     MatFormFieldModule,
     MatInputModule,
@@ -40,6 +42,7 @@ import { WeatherComponent } from './weather/weather.component';
     MatCardModule,
     HttpClientModule,
     FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
