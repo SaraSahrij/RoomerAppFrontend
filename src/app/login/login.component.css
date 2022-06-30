@@ -7,7 +7,6 @@
   align-items: center;
 }
 
-
 h2 {
   font-weight: 300;
   text-align: center;
@@ -16,8 +15,6 @@ h2 {
 p {
   position: relative;
 }
-
-
 
 #login-form-wrap {
   background-color: #fff;
@@ -62,13 +59,14 @@ input[type="password"] {
   display: inline-block;
   background: none;
 }
+
 input[type="text"]:focus,
 input[type="password"]:focus {
   border-color: #3ca9e2;
 }
 
-input[type="text"]:valid ~ .validation span:first-child,
-input[type="email"]:valid ~ .validation span:first-child {
+input[type="text"]:valid~.validation span:first-child,
+input[type="email"]:valid~.validation span:first-child {
   top: 30px;
   left: 14px;
   width: 20px;
@@ -76,8 +74,9 @@ input[type="email"]:valid ~ .validation span:first-child {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-input[type="text"]:valid ~ .validation span:last-child,
-input[type="email"]:valid ~ .validation span:last-child {
+
+input[type="text"]:valid~.validation span:last-child,
+input[type="email"]:valid~.validation span:last-child {
   top: 35px;
   left: 8px;
   width: 11px;
@@ -112,6 +111,7 @@ input[type="submit"] {
   cursor: pointer;
   text-align: center;
 }
+
 input[type="submit"]:hover {
   background-color: #d55032;
   -webkit-transition: all 0.2s ease;

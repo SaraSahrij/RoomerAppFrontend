@@ -2,8 +2,14 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
 export const environment = {
-  production: false
+  production: false,
+  weatherApiBaseUrl: 'https://community-open-weather-map.p.rapidapi.com/weather',
+  XRapidAPIHostHeaderName: 'X-RapidAPI-Host',
+  XRapidAPIHostHeaderValue: 'community-open-weather-map.p.rapidapi.com',
+  XRapidAPIKeyHeaderName: 'X-RapidAPI-Key',
+  XRapidAPIKeyHeaderValue: '05f165743bmshe73dc98e846d509p1f44d3jsn8d5c347c674a'
 };
 
 /*
