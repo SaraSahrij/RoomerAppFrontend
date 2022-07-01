@@ -1,5 +1,19 @@
 <div class="container">
-  <h1>Verfügbare Räume</h1>
+  <h3>Verfügbare Räume</h3>
+  <div class="info">
+    <div class="box">
+      <div class="green"></div>
+      <p>0-35%</p>
+    </div>
+    <div class="box">
+      <div class="orange"></div>
+      <p>35-70%</p>
+    </div>
+    <div class="box">
+      <div class="red"></div>
+      <p>70-100%</p>
+    </div>
+  </div>
   <div [ngClass]="getNgStyle(room)" *ngFor="let room of rooms">
     <img src="{{room.img_url}}" alt="room" width="300px">
     <p>{{room.description}}</p>

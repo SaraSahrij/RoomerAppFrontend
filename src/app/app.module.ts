@@ -16,6 +16,7 @@ import { RoomListComponent } from './room-list/room-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { WeatherComponent } from './weather/weather.component';
+import { BuildingListComponent } from './building-list/building-list.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { WeatherComponent } from './weather/weather.component';
     RoomListComponent,
     FooterComponent,
     WeatherComponent,
+    BuildingListComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { WeatherComponent } from './weather/weather.component';
       { path: 'rooms', component: RoomListComponent },
       { path: 'corona', component: CoronaStatusComponent },
       { path: 'weather', component: WeatherComponent },
+      { path: 'buildings', component: BuildingListComponent },
     ]),
     MatFormFieldModule,
     MatInputModule,

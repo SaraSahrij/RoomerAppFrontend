@@ -24,28 +24,67 @@ img {
 
 .empty {
 
-  background-color: rgba(144, 238, 144, 0.34);
+  background-color: rgba(144, 238, 144, 0.57);
 }
 
 .full {
-  background-color: rgba(240, 128, 128, 0.34);
+  background-color: rgba(234, 11, 11, 0.57);
 }
 
 .mid {
-  background-color: rgb(241, 90, 21, 0.34);
+  background-color: rgba(250, 81, 2, 0.57);
 }
 
 
 .room p {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .room i {
-  margin-right: 1rem;
+  margin-right: 3rem;
   margin-left: auto;
+
 }
 
 .room i:hover {
   cursor: pointer;
 }
+
+.info {
+  display: flex;
+}
+
+.box {
+  display: flex;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+
+.green {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(144, 238, 144, 0.57);
+  margin-right: 0.2rem;
+  border-radius: 5rem;
+}
+
+.orange {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(250, 81, 2, 0.57);
+  margin-right: 0.2rem;
+  border-radius: 5rem;
+
+}
+
+.red {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.2rem;
+  background-color: rgba(234, 11, 11, 0.57);
+  border-radius: 5rem;
+
+}
+
 

@@ -14,16 +14,7 @@ import {HttpClient} from "@angular/common/http";
 export class RoomListComponent implements OnInit {
 
   RoomStaus: typeof RoomStatus = RoomStatus;
-  /*
-  rooms: any =
-    [
-      {img_url: "../../assets/img/room_1.jpeg", description: "AE01", status: RoomStatus.EMPTY},
-      {img_url: "../../assets/img/room_2.webp", description: "AE02", status: RoomStatus.MID},
-      {img_url: "../../assets/img/room_3.webp", description: "AE03", status: RoomStatus.FULL},
-      {img_url: "../../assets/img/room_4.webp", description: "AE04", status: RoomStatus.FULL},
-      {img_url: "../../assets/img/room_5.jpeg", description: "AE05", status: RoomStatus.MID},
-    ];
-   */
+
   rooms: Room[] = [];
 
   constructor(private http: HttpClient) {
@@ -33,9 +24,11 @@ export class RoomListComponent implements OnInit {
   ngOnInit(): void {
     this.http.get("http://localhost:8080/raum/all").subscribe(data => {
       this.rooms = Object.values(data);
-      this.rooms.forEach((room: any) => {
-        room.img_url = "../../assets/img/room_1.jpeg";
-      })
+      this.rooms[0].img_url = "../../assets/img/room_1.jpeg";
+      this.rooms[1].img_url = "../../assets/img/room_2.webp";
+      this.rooms[2].img_url = "../../assets/img/room_3.webp";
+      this.rooms[3].img_url = "../../assets/img/room_4.webp";
+      this.rooms[5].img_url = "../../assets/img/room_5.jpeg";
     });
   }
 
