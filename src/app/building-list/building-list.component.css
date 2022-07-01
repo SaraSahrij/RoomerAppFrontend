@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.building {
+  text-align: center;
+  margin: 5rem;
+}
+
+.building:hover {
+  cursor: pointer;
+}
+
+.building img {
+  border-radius: 0.3rem;
+}
