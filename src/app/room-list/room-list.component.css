@@ -6,6 +6,7 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-size: 1.5rem;
   margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 .room {
@@ -16,6 +17,10 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 0.3rem;
   align-items: center;
+}
+
+h3 {
+  margin: 1rem;
 }
 
 img {
@@ -34,7 +39,6 @@ img {
 .mid {
   background-color: rgba(250, 81, 2, 0.57);
 }
-
 
 .room p {
   margin-left: 2rem;

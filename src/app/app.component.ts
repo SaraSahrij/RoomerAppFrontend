@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { WeatherData } from './models/weather.models';
-import { WeatherService } from './services/weather.service';
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -8,33 +7,13 @@ import { WeatherService } from './services/weather.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  // constructor(private weatherService: WeatherService) {
 
-  // }
-
-  constructor() { }
-
-  // cityName: string = 'Dortmund'
-  // weatherData?: WeatherData
-
-  ngOnInit(): void {
-    // this.getWeatherData(this.cityName);
+  constructor() {
   }
 
-  // onSubmit() {
-  //   this.getWeatherData(this.cityName);
-  //   this.cityName = '';
-  // }
+  ngOnInit(): void {
+  }
 
-  // private getWeatherData(cityName: string) {
-  //   this.weatherService.getWeatherData(cityName)
-  //     .subscribe({
-  //       next: (respone) => {
-  //         this.weatherData = respone;
-  //         console.log(respone);
-  //       }
-  //     });
-  // }
 
   title = 'RoomerAppFrontend';
 }

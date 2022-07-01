@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {Room, RoomStatus} from "../models/room";
-import {RoomService} from "../services/room.service";
 import {HttpClient} from "@angular/common/http";
 
 
@@ -13,7 +12,7 @@ import {HttpClient} from "@angular/common/http";
 
 export class RoomListComponent implements OnInit {
 
-  RoomStaus: typeof RoomStatus = RoomStatus;
+  // RoomStaus: typeof RoomStatus = RoomStatus;
 
   rooms: Room[] = [];
 

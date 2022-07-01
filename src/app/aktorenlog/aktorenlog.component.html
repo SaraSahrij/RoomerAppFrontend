@@ -1,0 +1,39 @@
+<!--<div class="container">-->
+<!--  <div *ngFor="let log of aktorenlog">-->
+<!--    <p>{{log.id}}</p>-->
+<!--    <p>{{log.zeit}}</p>-->
+<!--    <p>{{log.aktion}}</p>-->
+<!--    <p>{{log.struktur}}</p>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="container">
+  <h2>Aktorenlog</h2>
+
+  <table class="table align-middle mb-0 bg-white">
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Aktor</div>
+        <div class="col col-2">Zeit</div>
+        <div class="col col-3">Status</div>
+      </li>
+
+      <li class="table-row" *ngFor="let log of aktorenlog">
+        <div class="col col-1" data-label="Job Id">{{log.struktur}}</div>
+        <div class="col col-2" data-label="Job Id">{{log.zeit | date: 'mm:hh a dd/MM/yyyy'}}</div>
+        <div class="col col-3" data-label="Job Id">{{log.aktion}}</div>
+      </li>
+    </ul>
+  </table>
+</div>
+
+<!--<form action="" method="post">-->
+<!--  <input type="submit" name="button 1" value="Button 1" class="input">-->
+<!--</form>-->
+
+<div>
+
+  <form action="http://localhost:8080/firmware/check" method="post">
+    <a href="" class="btn first"> Überprüfe ob die Lichter den aktuellsten Stand der Software verfügen.
+    </a>
+  </form>
+</div>
